@@ -1,0 +1,8 @@
+---
+- name: letsencrypt
+  hosts: all
+  become: yes
+  vars:
+    encrypt_client_location : /opt/letsencrypt
+  roles:
+    - letsencrypt
